@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OR Dent Stomatoloji Klinika - Müasir Diş Müalicəsi və Estetika</title>
+  <meta name="description" content="OR Dent Stomatoloji Klinika. Müalicəyə indi başlayın, ödənişi 1 ay sonra edin! Faizsiz, zaminsiz, ilkin ödənişsiz kredit imkanı. Zirkon, İmplant, Breket, Keramika və Estetik Stomatologiya.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" id="brandLogo">
+        <img src="assets/images/or_dent_logo_transparent.png" alt="OR Dent Logo" class="logo-img">
+        <div class="logo-text-wrap">
+          <span class="logo-title">OR DENT</span>
+          <span class="logo-subtitle">Stomatoloji Klinika</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Əsas Menyu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Ana Səhifə</a></li>
+          <li><a href="#about" class="nav-link">Haqqımızda</a></li>
+          <li><a href="#specialities" class="nav-link">Xidmətlər</a></li>
+          <li><a href="#team" class="nav-link">Həkimlərimiz</a></li>
+          <li><a href="#credit" class="nav-link">Kredit Şərtləri</a></li>
+          <li><a href="#blogs" class="nav-link">Məqalələr</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Contact Action -->
+      <div class="header-action">
+        <a href="tel:+994775037575" class="phone-btn" id="phoneCallBtn" aria-label="Klinika ilə zəng">
+          <svg class="phone-icon" viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <span class="phone-number">077 503 75 75</span>
+        </a>
+
+        <!-- Mobile Action Buttons -->
+        <div class="mobile-actions">
+          <a href="tel:+994775037575" class="mobile-icon-btn" aria-label="Zəng et">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+          </a>
+          <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Menyunu aç" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-link">Ana Səhifə</a></li>
+        <li><a href="#about" class="mobile-link">Haqqımızda</a></li>
+        <li><a href="#specialities" class="mobile-link">Xidmətlər</a></li>
+        <li><a href="#team" class="mobile-link">Həkimlərimiz</a></li>
+        <li><a href="#credit" class="mobile-link">Kredit Şərtləri</a></li>
+        <li><a href="#blogs" class="mobile-link">Məqalələr</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-sky full-width" onclick="openAppointmentModal()">Qəbula Yazılın &rarr;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="hero">
+    <!-- Decorative background curves -->
+    <div class="hero-bg-lines" aria-hidden="true">
+      <svg viewBox="0 0 1440 600" fill="none" preserveAspectRatio="none">
+        <path d="M750 0C850 150 1100 220 1440 180" stroke="#bae6fd" stroke-width="2.5" stroke-dasharray="8 8" opacity="0.6"/>
+        <path d="M820 0C900 240 1200 320 1440 280" stroke="#93c5fd" stroke-width="2" opacity="0.5"/>
+        <path d="M920 0C1020 300 1300 400 1440 380" stroke="#bfdbfe" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="1250" cy="180" r="140" stroke="#e0f2fe" stroke-width="2" fill="none" opacity="0.7"/>
+      </svg>
+    </div>
+
+    <div class="container hero-container">
+      <!-- Hero Left Content -->
+      <div class="hero-content">
+        <div class="hero-offer-pill">
+          <span class="offer-dot"></span>
+          <span class="offer-text">Faizsiz, zaminsiz, ilkin ödənişsiz kredit</span>
+        </div>
+
+        <h1 class="hero-title">
+          Müalicəyə <span class="highlight-blue">indi</span> başlayın,<br>
+          ödənişi <span class="highlight-blue">1 ay sonra</span> edin.
+        </h1>
+        <p class="hero-subtitle">
+          OR Dent Stomatoloji Klinikasında ən son texnologiyalar və peşəkar həkim heyəti ilə rahat, ağrısız və zəmanətli diş müalicəsi xidmətləri.
+        </p>
+        
+        <div class="hero-cta-wrapper">
+          <button class="btn btn-sky" id="heroAppointmentBtn" onclick="openAppointmentModal()">
+            <span>Qəbula Yazılın</span>
+            <span class="btn-arrow">&rarr;</span>
+          </button>
+          <a href="https://wa.me/994775037575?text=Salam%2C%20OR%20Dent%20klinikasına%20qəbula%20yazılmaq%20istəyirəm." target="_blank" class="btn btn-whatsapp">
+            <span>WhatsApp ilə Əlaqə</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Right Image + Floating Card -->
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/images/hero_doctor.jpg" alt="OR Dent Həkim-Stomatoloq" class="hero-doctor-img">
+        </div>
+
+        <!-- Floating Credit / Discount Badge -->
+        <div class="floating-badge hero-discount-badge" id="discountBadge">
+          <div class="badge-icon-wrap">
+            <span class="percentage-icon">%</span>
+          </div>
+          <div class="badge-text">
+            <span class="badge-title">0% İlkin Ödəniş</span>
+            <span class="badge-subtitle">1 ay sonra ödəmə imkanı</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== QUICK SEARCH & BOOKING BAR ==================== -->
+  <section class="search-doctor-section" id="searchDoctorSection">
+    <div class="container">
+      <div class="search-card">
+        <div class="search-header">
+          <h2 class="search-title">Həkim və Xidmət Seçimi</h2>
+          <p class="search-subtitle">İstədiyiniz stomatoloji xidməti və ya həkimi dərhal seçib qəbula yazılın</p>
+        </div>
+
+        <form class="search-form" id="searchDoctorForm" onsubmit="handleSearch(event)">
+          <!-- Location Input -->
+          <div class="search-field">
+            <div class="field-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+            </div>
+            <div class="field-input-group">
+              <label for="searchLocation" class="sr-only">Filial / Ünvan</label>
+              <input type="text" id="searchLocation" value="Bakı Filialı" readonly>
+            </div>
+          </div>
+
+          <!-- Type of Service Select -->
+          <div class="search-field">
+            <div class="field-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+                <path d="M12 14v4M10 16h4"/>
+              </svg>
+            </div>
+            <div class="field-input-group">
+              <label for="searchService" class="sr-only">Xidmət Növü</label>
+              <select id="searchService">
+                <option value="" disabled selected>Xidmət Növü Seçin</option>
+                <option value="İmplant">İmplant (İmplantasiya)</option>
+                <option value="Zirkon">Zirkon Qapaqlar</option>
+                <option value="Keramika">Keramika və Vinirlər</option>
+                <option value="Çistka">Çistka (Peşəkar Gigiyena)</option>
+                <option value="Breket">Breket (Ortodontiya)</option>
+                <option value="Estetik Plomb">Estetik Plomb və Restavrasiya</option>
+                <option value="Protez">Protezlər</option>
+                <option value="Endodontiya">Endodontiya (Kanal Müalicəsi)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Type of Specialist Select -->
+          <div class="search-field">
+            <div class="field-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <div class="field-input-group">
+              <label for="searchSpecialist" class="sr-only">Həkim Seçin</label>
+              <select id="searchSpecialist">
+                <option value="" disabled selected>Həkim Seçin</option>
+                <option value="Dr. Bəxtiyar Abdullayev">Dr. Bəxtiyar Abdullayev</option>
+                <option value="Dr. Mədinə Babakişiyeva">Dr. Mədinə Babakişiyeva</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Find Doctor Action Button -->
+          <button type="submit" class="btn btn-sky btn-find-doctor" id="findDoctorBtn">
+            Müraciət Et
+          </button>
+        </form>
+
+        <!-- Popular Searches -->
+        <div class="popular-searches">
+          <span class="popular-label">Populyar Xidmətlər:</span>
+          <div class="popular-tags">
+            <button type="button" class="popular-tag" onclick="quickFilter('Zirkon')">
+              <span class="tag-icon">&#x21aa;</span> Zirkon
+            </button>
+            <button type="button" class="popular-tag" onclick="quickFilter('İmplant')">
+              <span class="tag-icon">&#x21aa;</span> İmplant
+            </button>
+            <button type="button" class="popular-tag" onclick="quickFilter('Çistka')">
+              <span class="tag-icon">&#x21aa;</span> Çistka
+            </button>
+            <button type="button" class="popular-tag" onclick="quickFilter('Keramika')">
+              <span class="tag-icon">&#x21aa;</span> Keramika
+            </button>
+            <button type="button" class="popular-tag" onclick="quickFilter('Breket')">
+              <span class="tag-icon">&#x21aa;</span> Breket
+            </button>
+            <button type="button" class="popular-tag" onclick="quickFilter('Estetik Plomb')">
+              <span class="tag-icon">&#x21aa;</span> Estetik Plomb
+            </button>
+            <button type="button" class="popular-tag" onclick="quickFilter('Protez')">
+              <span class="tag-icon">&#x21aa;</span> Protez
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <!-- About Left Text -->
+      <div class="about-content">
+        <span class="section-tag">HAQQIMIZDA</span>
+        <h2 class="section-title">Qayğıkeş həkimlərimiz<br>sağlamlığınız üçün çalışır</h2>
+        <p class="section-desc">
+          OR Dent Stomatoloji Klinikasında hər bir pasientə fərdi yanaşma, steril və təhlükəsiz mühit, müasir diaqnostika və rahat ödəniş şərtləri ilə xidmət göstəririk.
+        </p>
+
+        <!-- Testimonial Quote Box with Doctor Avatar -->
+        <div class="doctor-quote-box">
+          <div class="doctor-avatar-wrap">
+            <img src="assets/images/dr_avatar_male.jpg" alt="Dr. Bəxtiyar Abdullayev" class="doctor-avatar">
+          </div>
+          <div class="quote-text-wrap">
+            <p class="quote-content">
+              &ldquo;Məqsədimiz pasientlərimizə ağrısız, estetik və uzunömürlü stomatoloji nəticə bəxş etməkdir.&rdquo;
+            </p>
+            <span class="doctor-name">Dr. Bəxtiyar Abdullayev — Həkim-Stomatoloq</span>
+          </div>
+        </div>
+
+        <div class="about-cta-wrap">
+          <button class="btn btn-sky" onclick="openAppointmentModal()">
+            <span>Qəbula Yazılın</span>
+            <span class="btn-arrow">&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- About Right Image + Floating Stats Badge -->
+      <div class="about-image-wrapper">
+        <div class="about-image-card">
+          <img src="assets/images/doctors_walking.jpg" alt="OR Dent həkim heyəti stomatoloji klinikada" class="about-doctors-img">
+        </div>
+
+        <!-- Floating Happy Clients Badge -->
+        <div class="floating-badge about-stats-badge" id="statsBadge">
+          <div class="badge-icon-wrap smile-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="smile-svg">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="3" stroke-linecap="round"/>
+              <line x1="15" y1="9" x2="15.01" y2="9" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="badge-text">
+            <div class="stats-item">
+              <strong class="stat-number">10K+</strong>
+              <span class="stat-text">Razı Pasient</span>
+            </div>
+            <div class="stats-item">
+              <strong class="stat-number">100%</strong>
+              <span class="stat-text">Zəmanətli Müalicə</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SPECIALITIES / XİDMƏTLƏRİMİZ ==================== -->
+  <section class="specialities-section" id="specialities">
+    <div class="container specialities-container">
+      <!-- Specialities Left Intro -->
+      <div class="specialities-intro">
+        <span class="section-tag">XİDMƏTLƏRİMİZ</span>
+        <h2 class="section-title">Geniş stomatoloji<br>xidmət spektri</h2>
+        <p class="section-desc">
+          Bütün növ diş müalicəsi, cərrahiyyə, ortodontiya və estetik bərpa xidmətlərini yüksək dəqiqliklə icra edirik.
+        </p>
+        
+        <div class="specialities-actions-row">
+          <button class="btn btn-sky btn-browse" onclick="openAppointmentModal('Stomatoloji Konsultasiya')">
+            <span>Bütün Xidmətlər</span>
+            <span class="btn-arrow">&rarr;</span>
+          </button>
+          
+          <!-- Navigation Arrows inside Intro -->
+          <div class="specialities-nav-controls">
+            <button class="spec-arrow-btn prev" id="specPrevBtn" aria-label="Əvvəlki xidmətlər" title="Əvvəlki">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <button class="spec-arrow-btn next" id="specNextBtn" aria-label="Növbəti xidmətlər" title="Növbəti">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specialities Cards Carousel -->
+      <div class="specialities-carousel-wrap">
+        <div class="specialities-track" id="specialitiesTrack">
+          
+          <!-- Card 1: Zirkon -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_pathology.jpg" alt="Zirkon Qapaqlar" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">Zirkon</h3>
+            <p class="speciality-card-desc">
+              Təbii diş estetikasına ən yaxın, yüksək möhkəmlikli premium zirkon örtüklər.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('Zirkon')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 2: İmplant -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_implant.jpg" alt="İmplantasiya" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">İmplant</h3>
+            <p class="speciality-card-desc">
+              İtirilmiş dişlərin ömürlük bərpası üçün ağrısız müasir titan implantasiya.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('İmplant')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 3: Çistka & Gigiyena -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_pathology.jpg" alt="Çistka" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">Çistka</h3>
+            <p class="speciality-card-desc">
+              Ultrasəs və AirFlow ilə diş daşlarının və ərpin ağrısız peşəkar təmizlənməsi.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('Çistka')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 4: Keramika -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_ophthalmology.jpg" alt="Keramika" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">Keramika</h3>
+            <p class="speciality-card-desc">
+              Hollivud təbəssümü üçün mükəmməl keramika vinirlər və estetik qapaqlar.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('Keramika')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 5: Breket -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_cardiology.jpg" alt="Breket" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">Breket</h3>
+            <p class="speciality-card-desc">
+              Əyri dişlərin və dişləm qüsurlarının müasir breket sistemləri ilə düzəldilməsi.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('Breket')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 6: Estetik Plomb -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_pulmonology.jpg" alt="Estetik Plomb" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">Estetik Plomb</h3>
+            <p class="speciality-card-desc">
+              Diş rənginə tam uyğun işıqla bərkiyən estetik plomblar və bədii restavrasiya.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('Estetik Plomb')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 7: Protez -->
+          <div class="speciality-card">
+            <div class="speciality-icon-box">
+              <img src="assets/images/icon_pathology.jpg" alt="Protez" class="speciality-3d-icon">
+            </div>
+            <h3 class="speciality-card-title">Protez</h3>
+            <p class="speciality-card-desc">
+              Çıxan və çıxmayan bütün növ funksional, rahat və davamlı diş protezləri.
+            </p>
+            <a href="#specialities" class="card-action-link" onclick="openAppointmentModal('Protez')">
+              <span>Ətraflı / Qəbul</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Carousel Pagination Dots & Progress Bar -->
+        <div class="carousel-bottom-nav">
+          <div class="carousel-dots" id="specCarouselDots">
+            <!-- Dynamically populated / styled dots -->
+            <button class="spec-dot active" onclick="goToSpecSlide(0)" aria-label="Səhifə 1"></button>
+            <button class="spec-dot" onclick="goToSpecSlide(1)" aria-label="Səhifə 2"></button>
+            <button class="spec-dot" onclick="goToSpecSlide(2)" aria-label="Səhifə 3"></button>
+          </div>
+          <span class="carousel-page-indicator" id="specPageText">1 / 3</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OUR PROFESSIONALS / HƏKİMLƏRİMİZ ==================== -->
+  <section class="professionals-section" id="team">
+    <div class="container">
+      <div class="professionals-header text-center">
+        <span class="section-tag">HƏKİMLƏRİMİZ</span>
+        <h2 class="section-title">Təcrübəli və peşəkar komandamız</h2>
+        <p class="section-desc">Sağlam təbəssümünüzü etibar edə biləcəyiniz mütəxəssislərimizlə tanış olun.</p>
+      </div>
+
+      <div class="doctors-grid">
+        <!-- Doctor 1: Dr. Bəxtiyar Abdullayev -->
+        <div class="doctor-card">
+          <div class="doctor-card-img-wrap">
+            <img src="assets/images/dr_baxtiyar_hd.jpg" alt="Dr. Bəxtiyar Abdullayev - Həkim-Stomatoloq" class="doctor-card-img">
+          </div>
+          <div class="doctor-card-body">
+            <h3 class="doctor-card-name">Dr. Bəxtiyar Abdullayev</h3>
+            <span class="doctor-card-title">Həkim-Stomatoloq</span>
+            <ul class="doctor-skills-list">
+              <li class="doctor-skill-item">Diş və diş əti xəstəliklərinin müalicəsi</li>
+              <li class="doctor-skill-item">Endodontiya (Kanal müalicəsi)</li>
+              <li class="doctor-skill-item">Restavrasiya və Estetika</li>
+              <li class="doctor-skill-item">Ortodontiya</li>
+            </ul>
+            <button class="btn btn-sky" onclick="openAppointmentModal('Dr. Bəxtiyar Abdullayev')">
+              Qəbula Yazıl &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Doctor 2: Dr. Mədinə Babakişiyeva -->
+        <div class="doctor-card">
+          <div class="doctor-card-img-wrap">
+            <img src="assets/images/dr_madina_hd.jpg" alt="Dr. Mədinə Babakişiyeva - Həkim-Stomatoloq" class="doctor-card-img">
+          </div>
+          <div class="doctor-card-body">
+            <h3 class="doctor-card-name">Dr. Mədinə Babakişiyeva</h3>
+            <span class="doctor-card-title">Həkim-Stomatoloq</span>
+            <ul class="doctor-skills-list">
+              <li class="doctor-skill-item">Diş və diş əti xəstəliklərinin müalicəsi</li>
+              <li class="doctor-skill-item">Endodontiya (Kanal müalicəsi)</li>
+              <li class="doctor-skill-item">Estetik restavrasiya və Vinir</li>
+            </ul>
+            <button class="btn btn-sky" onclick="openAppointmentModal('Dr. Mədinə Babakişiyeva')">
+              Qəbula Yazıl &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CREDIT & SPECIAL OFFER SECTION ==================== -->
+  <section class="credit-offer-section" id="credit">
+    <div class="container">
+      <div class="credit-banner">
+        <div class="credit-content">
+          <span class="credit-tag">FAİZSİZ KREDİT ŞƏRTLƏRİ</span>
+          <h2 class="credit-title">Müalicəyə indi başlayın, ödənişi 1 ay sonra edin!</h2>
+          <p class="credit-desc">
+            Bütün növ stomatoloji müalicə, implant və estetik bərpa xidmətlərindən ilkin ödənişsiz, zaminsiz və faizsiz kreditlə dərhal yararlanın.
+          </p>
+        </div>
+
+        <div class="credit-features-wrap">
+          <div class="credit-feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>0% Faiz dərəcəsi</span>
+          </div>
+          <div class="credit-feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>Zaminsiz və rahat sənədləşmə</span>
+          </div>
+          <div class="credit-feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>İlkin ödənişsiz başlama imkanı</span>
+          </div>
+          <div class="credit-feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>Ödənişə 1 ay sonra başlamaq rahatlığı</span>
+          </div>
+          <a href="https://wa.me/994775037575?text=Salam%2C%20kredit%20şərtləri%20haqqında%20məlumat%20almaq%20istəyirəm." target="_blank" class="btn btn-sky full-width" style="margin-top: 10px;">
+            Kredit Şərtləri üçün Müraciət &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container testimonials-container">
+      <div class="testimonials-header">
+        <span class="section-tag">RƏYLƏR</span>
+        <h2 class="section-title">Pasientlərimizin Rəyləri</h2>
+        <p class="section-desc">
+          OR Dent klinikasında müalicə almış pasientlərimizin təəssüratları və məmnuniyyəti.
+        </p>
+      </div>
+
+      <div class="testimonials-cards-wrap">
+        <div class="testimonial-card">
+          <div class="star-rating" aria-label="5 ulduz">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p class="testimonial-text">
+            &ldquo;İmplant və zirkon qapaqlar qoydurdum. Həm həkimlərin peşəkarlığı, həm də ilkin ödənişsiz kredit imkanı çox rahat oldu. Nəticədən çox razıyam!&rdquo;
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Rəşad Quliyev</span>
+            <span class="author-title">İmplant və Zirkon Pasienti</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="star-rating" aria-label="5 ulduz">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <p class="testimonial-text">
+            &ldquo;Estetik restavrasiya və çistka etdirdim. Dr. Mədinə xanıma xüsusi təşəkkür edirəm, ağrısız və çox səliqəli oldu. Hər kəsə tövsiyə edirəm!&rdquo;
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Günel Məmmədova</span>
+            <span class="author-title">Estetik Restavrasiya Pasienti</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG / MƏQALƏLƏR SECTION ==================== -->
+  <section class="blogs-section" id="blogs">
+    <div class="container blogs-container">
+      <div class="blogs-header text-center">
+        <span class="section-tag">BLOQ VƏ MƏSLƏHƏTLƏR</span>
+        <h2 class="section-title">Diş sağlamlığı və estetikası<br>haqqında faydalı məlumatlar</h2>
+      </div>
+
+      <div class="blogs-grid" id="blogsGrid">
+        <!-- Blog 1 -->
+        <article class="blog-card">
+          <div class="blog-image-wrap">
+            <img src="assets/images/blog_dental_1.jpg" alt="Zirkon qapaqlar haqqında" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">Məsləhət</span>
+            <h3 class="blog-card-title">Zirkon qapaqların üstünlükləri və təbii görünüş sirri</h3>
+            <a href="#blogs" class="card-action-link" onclick="openAppointmentModal('Zirkon məsləhəti')">
+              <span>Ətraflı Oxu</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="blog-card">
+          <div class="blog-image-wrap">
+            <img src="assets/images/blog_dental_2.jpg" alt="İmplantasiya proseduru" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">İmplantasiya</span>
+            <h3 class="blog-card-title">Diş implantı necə qoyulur və ömrü nə qədərdir?</h3>
+            <a href="#blogs" class="card-action-link" onclick="openAppointmentModal('İmplant məsləhəti')">
+              <span>Ətraflı Oxu</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog 3 -->
+        <article class="blog-card">
+          <div class="blog-image-wrap">
+            <img src="assets/images/blog_dental_3.jpg" alt="Peşəkar çistka və gigiyena" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <span class="blog-date">Gigiyena</span>
+            <h3 class="blog-card-title">Diş daşlarının təmizlənməsi (Çistka) niyə vacibdir?</h3>
+            <a href="#blogs" class="card-action-link" onclick="openAppointmentModal('Çistka məsləhəti')">
+              <span>Ətraflı Oxu</span>
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/images/or_dent_logo_transparent.png" alt="OR Dent Logo" style="width: 48px; height: 48px;">
+          <span class="footer-logo-title">OR DENT</span>
+        </div>
+        <p class="footer-about-text">
+          OR Dent Stomatoloji Klinika. Müasir avadanlıqlar, peşəkar stomatoloqlar və rahat ödəniş şərtləri ilə sağlam təbəssümünüzün zəmanəti.
+        </p>
+        <p style="color: var(--color-sky-blue); font-weight: 700; font-size: 0.9rem;">
+          Müalicəyə indi başlayın, ödənişi 1 ay sonra edin!
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Keçidlər</h4>
+        <ul class="footer-links-list">
+          <li><a href="#hero">Ana Səhifə</a></li>
+          <li><a href="#about">Haqqımızda</a></li>
+          <li><a href="#specialities">Xidmətlər</a></li>
+          <li><a href="#team">Həkimlərimiz</a></li>
+          <li><a href="#credit">Kredit İmkanı</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Xidmətlərimiz</h4>
+        <ul class="footer-links-list">
+          <li><a href="#specialities">Zirkon Qapaqlar</a></li>
+          <li><a href="#specialities">İmplantasiya</a></li>
+          <li><a href="#specialities">Çistka (Gigiyena)</a></li>
+          <li><a href="#specialities">Keramika &amp; Vinir</a></li>
+          <li><a href="#specialities">Breket (Ortodontiya)</a></li>
+          <li><a href="#specialities">Estetik Plomb</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-col-title">Əlaqə</h4>
+        <p class="footer-contact-item"><strong>Telefon:</strong> <a href="tel:+994775037575" style="color:#fff;">077 503 75 75</a></p>
+        <p class="footer-contact-item"><strong>WhatsApp:</strong> <a href="https://wa.me/994775037575" target="_blank" style="color: var(--color-sky-blue);">+994 77 503 75 75</a></p>
+        <p class="footer-contact-item"><strong>Email:</strong> <a href="mailto:clinicordent@gmail.com" style="color:#fff;">clinicordent@gmail.com</a></p>
+        <p class="footer-contact-item"><strong>İş Saatları:</strong> B.e - Şənbə: 09:00 - 20:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 OR Dent Stomatoloji Klinika. Bütün hüquqlar qorunur.</p>
+      <div class="footer-bottom-links">
+        <a href="#hero">Müalicəyə İndi Başla</a>
+        <a href="tel:+994775037575">077 503 75 75</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== APPOINTMENT BOOKING MODAL ==================== -->
+  <div class="modal-overlay" id="appointmentModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeAppointmentModal()" aria-label="Bağla">&times;</button>
+      <div class="modal-header">
+        <span class="section-tag">QƏBULA YAZILIŞ</span>
+        <h3 class="modal-title">Həkim Qəbuluna Yazılın</h3>
+        <p class="modal-subtitle">Məlumatlarınızı qeyd edin və ya birbaşa WhatsApp ilə əlaqə saxlayın.</p>
+      </div>
+      <form class="modal-form" id="bookingForm" onsubmit="handleBookingSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookName">Ad və Soyadınız</label>
+            <input type="text" id="bookName" placeholder="Məsələn: Əli Əliyev" required>
+          </div>
+          <div class="form-group">
+            <label for="bookPhone">Əlaqə Nömrəniz</label>
+            <input type="tel" id="bookPhone" placeholder="050 / 070 / 077 ..." required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookSpecialist">Xidmət və ya Həkim</label>
+            <select id="bookSpecialist" required>
+              <option value="" disabled selected>Xidmət Seçin</option>
+              <option value="Zirkon Qapaqlar">Zirkon Qapaqlar</option>
+              <option value="İmplantasiya">İmplantasiya</option>
+              <option value="Çistka və Gigiyena">Çistka və Gigiyena</option>
+              <option value="Keramika və Vinir">Keramika və Vinir</option>
+              <option value="Breket Müalicəsi">Breket Müalicəsi</option>
+              <option value="Estetik Plomb">Estetik Plomb</option>
+              <option value="Protez">Protez</option>
+              <option value="Dr. Bəxtiyar Abdullayev">Dr. Bəxtiyar Abdullayev</option>
+              <option value="Dr. Mədinə Babakişiyeva">Dr. Mədinə Babakişiyeva</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookDate">İstədiyiniz Tarix</label>
+            <input type="date" id="bookDate" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bookNotes">Əlavə Qeyd / Şikayətiniz (İstəyə görə)</label>
+          <textarea id="bookNotes" rows="2" placeholder="Şikayətinizi və ya kredit istəyinizi qeyd edə bilərsiniz..."></textarea>
+        </div>
+        
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <button type="submit" class="btn btn-sky full-width btn-submit-booking">
+            Müraciəti Təsdiqlə &rarr;
+          </button>
+          <button type="button" class="btn btn-whatsapp full-width" onclick="sendViaWhatsApp()">
+            WhatsApp ilə Dərhal Yazıl
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">✓</div>
+    <div class="toast-message" id="toastMessage">Müraciətiniz qeydə alındı!</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
